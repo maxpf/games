@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  
+ 	<script>
+	
+	
+	function hello(){
+		var players = document.getElementById('number').value
+		var winner = Math.floor(Math.random() * players) + 1; 
+		alert("Player " + winner + " is the winner.");
+		document.getElementById('number').value = " ";
+	}
+	</script>
+
+
+</head>
+
+<body>
+
+<br /><br /><br />
+
+<p>It's time to play...</p>
+<h1>Who is the winner?</h1>
+
+<h2>Step 1: enter number of players:</h2>
+<input type="text" id="number" /><br><br>
+
+<h2>Step 2: Assign each player a number. Decide who is "Player 1," "Player 2," etc, all the way up to "Player n" for n number of players. </h2>
+
+<h3>Click this button to begin the game:</h3>
+<button onclick="hello()">Who is the winner?</button>
+
+
+
+</body>
+</html>
